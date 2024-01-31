@@ -31,18 +31,21 @@ class Post {
     }
 
     public static function all() {
-        return collect(File::files(resource_path('posts/')))
-        ->map(function ($file) {
-            return YamlFrontMatter::parseFile($file);
-        })
-        ->map(function ($document) {
-            return new Post(
-                $document->title,
-                $document->slug,
-                $document->excerpt,
-                $document->date,
-                $document->body(),
-            );
+        return cache()->Cache::rememberForever('posts.all', function () {
+            return collect(File::files(resource_path('posts/')))
+            ->map(function ($file) {
+                return YamlFrontMatter::parseFile($file);
+            })
+            ->map(function ($document) {
+                return new Post(
+                    $document->title,
+                    $document->slug,
+                    $document->excerpt,
+                    $document->date,
+                    $document->body(),
+                );
+            })
+            ->sortByDesc('date');
         });
     }
 }
