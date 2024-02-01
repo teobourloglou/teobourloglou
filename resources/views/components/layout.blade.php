@@ -9,6 +9,6 @@
     <link rel="stylesheet" href="/app.css">
 </head>
 <body>
-    {{ $content }}
+    {{ $slot }}
 </body>
 </html>
