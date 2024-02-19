@@ -24,11 +24,24 @@
 
             <div class="mt-8 md:mt-0 flex items-center gap-4">
                 @auth
-                    <form action="/logout" method="post">
-                        @csrf
+                    <x-dropdown>
+                        <x-slot name="trigger">
+                            <button class="text-xs font-bold uppercase">Welcome, {{ auth()->user()->name }}!</button>
+                        </x-slot>
 
-                        <button type="submit" class="text-blue-500 text-sm font-semibold">Log out</button>
-                    </form>
+                        @can('admin')
+                            <x-dropdown-link href="/admin/posts" :active="request()->is('admin/posts')">Dashboard</x-dropdown-link>
+                            <x-dropdown-link href="/admin/posts/create" :active="request()->is('admin/posts/create')">New Post</x-dropdown-link>
+                        @endcan
+                        <x-dropdown-link href="#" x-data="{}" @click.prevent="document.querySelector('#logout-form').submit()">Log Out</x-dropdown-link>
+                        
+                        <form id="logout-form" action="/logout" method="post" class="hidden">
+                            @csrf
+    
+                            <button type="submit" class="text-blue-500 text-sm font-semibold">Log out</button>
+                        </form>
+                    </x-dropdown>
+
                 @else
                     <a href="/register" class="text-xs font-bold uppercase">Register</a>
                     <a href="/login" class="text-xs font-bold uppercase">Login</a>
