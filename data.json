@@ -1,0 +1,43 @@
+{
+    "projects" : [
+        {
+            "title"         : "EAYTHES",
+            "description"   : "A custom-coded blog for EAYTHES built with Laravel",
+            "image"         : "/photos/eaythes-logo.svg",
+            "link"          : "#",
+            "color"         : "blue",
+            "hex"           : "from-[#60a5fa] to-[#1e40af]"
+        },
+        {
+            "title"         : "Avramidis Visuals",
+            "description"   : "A custom-coded landing page for Avramidis Visuals Company",
+            "image"         : "/photos/avramidis-logo.svg",
+            "link"          : "#",
+            "color"         : "sky",
+            "hex"           : "from-[#7dd3fc] to-[#0284c7]"
+        },
+        {
+            "title"         : "Smart Safe",
+            "description"   : "A custom-coded landing page for Smart Safe Company",
+            "image"         : "/photos/smartsafe-logo.webp",
+            "link"          : "#",
+            "color"         : "red",
+            "hex"           : "from-[#7f1d1d] to-[#b91c1c]"
+        },
+        {
+            "title"         : "Spark Youth Center",
+            "description"   : "A custom-coded landing page for Spark Youth Center",
+            "image"         : "/photos/spark-logo.png",
+            "link"          : "#",
+            "color"         : "yellow",
+            "hex"           : "from-[#c2410c] to-[#eab308]"
+        },        {
+            "title"         : "VPaint",
+            "description"   : "A custom-coded landing page for VPaint company",
+            "image"         : "/photos/vpaint-logo.png",
+            "link"          : "#",
+            "color"         : "lime",
+            "hex"           : "from-[#4d7c0f] to-[#bef264]"
+        }
+    ]
+}

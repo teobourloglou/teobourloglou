@@ -1,72 +1,23 @@
-<div class="py-24 sm:py-32">
+<div class="pb-24 sm:pb-32">
     <div class="px-6 mx-auto max-w-7xl lg:px-8">
       <div class="grid max-w-2xl grid-cols-1 gap-4 mx-auto mt-16 auto-rows-fr sm:mt-20 lg:mx-0 lg:max-w-none lg:grid-cols-2">
-        <a href="#" target="_blank" class="relative overflow-hidden bg-neutral-900 aspect-square rounded-2xl">
-          <div class="absolute right-0 -top-24 transform-gpu blur-3xl" aria-hidden="true">
-            <div class="aspect-[1404/767] w-[87.75rem] bg-gradient-to-r from-[#60a5fa] to-[#1e40af] opacity-25" style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"></div>
-          </div>
-          <img src="/photos/grain.png" class="absolute z-20 w-full h-full" alt="">
-          <div class="absolute z-30 flex flex-col items-start justify-between w-full h-full px-4 py-8">
-            <img src="/photos/eaythes-logo.svg" class="size-24" alt="">
-            <div>
-              <h3 class="text-xl font-bold text-blue-200">EAYTHES</h3>
-              <p class="font-normal text-blue-50">A custom-coded blog for EAYTHES built with Laravel</p>
+
+        <template x-for="project in data.projects">
+          <a :href="project.link" target="_blank" class="relative overflow-hidden bg-neutral-900 aspect-square rounded-2xl">
+            <div class="absolute right-0 -top-24 transform-gpu blur-3xl" aria-hidden="true">
+              <div :class="project.hex" class="aspect-[1404/767] w-[87.75rem] bg-gradient-to-r opacity-25" style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"></div>
             </div>
-          </div>
-        </a>
-        <a href="#" target="_blank" class="relative overflow-hidden bg-neutral-900 aspect-square rounded-2xl">
-          <div class="absolute right-0 -top-24 transform-gpu blur-3xl" aria-hidden="true">
-            <div class="aspect-[1404/767] w-[87.75rem] bg-gradient-to-r from-[#7dd3fc] to-[#0284c7] opacity-25" style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"></div>
-          </div>
-          <img src="/photos/grain.png" class="absolute z-20 w-full h-full" alt="">
-          <div class="absolute z-30 flex flex-col items-start justify-between w-full h-full px-4 py-8">
-            <img src="/photos/avramidis-logo.svg" class="size-24" alt="">
-            <div>
-              <h3 class="text-xl font-bold text-sky-200">Avramidis Visuals</h3>
-              <p class="font-normal text-sky-50">A custom-coded landing page for Avramidis Visuals Company</p>
+            <img src="/photos/grain.png" class="absolute z-20 w-full h-full" alt="">
+            <div class="absolute z-30 flex flex-col items-start w-full h-full px-4 py-8 justify-evenly">
+              <img :src="project.image" class="object-contain w-24 mt-auto" alt="">
+              <div class="mt-auto">
+                <h3 x-text="project.title" class="text-xl font-bold text-blue-200"></h3>
+                <p x-text="project.description" class="font-normal text-blue-50"></p>
+              </div>
             </div>
-          </div>
-        </a>
-        <a href="#" target="_blank" class="relative overflow-hidden bg-neutral-900 aspect-square rounded-2xl">
-          <div class="absolute right-0 -top-24 transform-gpu blur-3xl" aria-hidden="true">
-            <div class="aspect-[1404/767] w-[87.75rem] bg-gradient-to-r from-[#7f1d1d] to-[#b91c1c] opacity-25" style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"></div>
-          </div>
-          <img src="/photos/grain.png" class="absolute z-20 w-full h-full" alt="">
-          <div class="absolute z-30 flex flex-col items-start justify-between w-full h-full px-4 py-8">
-            <img src="/photos/smartsafe-logo.webp" class="w-24 py-12" alt="">
-            <div>
-              <h3 class="text-xl font-bold text-red-200">Smart Safe</h3>
-              <p class="font-normal text-red-50">A custom-coded landing page for Smart Safe Company</p>
-            </div>
-          </div>
-        </a>
-        <a href="#" target="_blank" class="relative overflow-hidden bg-neutral-900 aspect-square rounded-2xl">
-          <div class="absolute right-0 -top-24 transform-gpu blur-3xl" aria-hidden="true">
-            <div class="aspect-[1404/767] w-[87.75rem] bg-gradient-to-r from-[#c2410c] to-[#eab308] opacity-25" style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"></div>
-          </div>
-          <img src="/photos/grain.png" class="absolute z-20 w-full h-full" alt="">
-          <div class="absolute z-30 flex flex-col items-start justify-between w-full h-full px-4 py-8">
-            <img src="/photos/spark-logo.png" class="w-24 py-12" alt="">
-            <div>
-              <h3 class="text-xl font-bold text-yellow-200">Spark Youth Center</h3>
-              <p class="font-normal text-yellow-50">A custom-coded landing page for Spark Youth Center</p>
-            </div>
-          </div>
-        </a>
-        <a href="#" target="_blank" class="relative overflow-hidden bg-neutral-900 aspect-square rounded-2xl">
-          <div class="absolute right-0 -top-24 transform-gpu blur-3xl" aria-hidden="true">
-            <div class="aspect-[1404/767] w-[87.75rem] bg-gradient-to-r from-[#4d7c0f] to-[#bef264] opacity-25" style="clip-path: polygon(73.6% 51.7%, 91.7% 11.8%, 100% 46.4%, 97.4% 82.2%, 92.5% 84.9%, 75.7% 64%, 55.3% 47.5%, 46.5% 49.4%, 45% 62.9%, 50.3% 87.2%, 21.3% 64.1%, 0.1% 100%, 5.4% 51.1%, 21.4% 63.9%, 58.9% 0.2%, 73.6% 51.7%)"></div>
-          </div>
-          <img src="/photos/grain.png" class="absolute z-20 w-full h-full" alt="">
-          <div class="absolute z-30 flex flex-col items-start justify-between w-full h-full px-4 py-8">
-            <img src="/photos/vpaint-logo.png" class="w-24 py-12" alt="">
-            <div>
-              <h3 class="text-xl font-bold text-lime-200">VPaint</h3>
-              <p class="font-normal text-lime-50">A custom-coded landing page for VPaint company</p>
-            </div>
-          </div>
-        </a>
-        <!-- More posts... -->
+          </a>
+        </template>
+
       </div>
     </div>
   </div>

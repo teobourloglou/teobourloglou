@@ -22,3 +22,31 @@ const fetchComponents = (components) => {
         });
     });
   };
+
+
+/**
+ * Fetches all data from the JSON file.
+ *
+ * @returns {void}
+ */
+const fetchData = () => {
+  return {
+      data: {},
+      loadData() {
+          fetch('data.json')
+              .then(response => {
+                  if (!response.ok) {
+                      throw new Error('Network response was not ok');
+                  }
+                  return response.json();
+              })
+              .then(json => {
+                  this.data = json;
+                  console.log(this.data)
+              })
+              .catch(error => {
+                  console.error('There has been a problem with your fetch operation:', error);
+              });
+      }
+  };
+}
