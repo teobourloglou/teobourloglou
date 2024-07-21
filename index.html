@@ -1,27 +1,35 @@
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Teo Bourloglou</title>
 
+        <link href="./input.css" rel="stylesheet" />
         <link href="./dist/output.css" rel="stylesheet" />
-        <script
-            defer
-            src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js"
-        ></script>
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=assistant:200,300,400,500,600,700,800" rel="stylesheet" />
+
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" ></script>
         <script src="./app.js"></script>
     </head>
     <body>
-        <div class="bg-[#efefef]">
+        <div x-data="{}" class="bg-[#efefef] grid-container max-w-7xl mx-auto">
             <div id="header"></div>
-            <div id="hero"></div>
-            <div id="text"></div>
-            <div id="work"></div>
+            <div class="grid grid-cols-2">
+                <div id="identity"></div>
+                <div class="">
+                    <div id="hero"></div>
+                    <div id="text"></div>
+                    <div id="work"></div>
+                </div>
+            </div>
         </div>
 
         <script>
             const homeComponents = [
                 { name: "header", elementId: "header" },
+                { name: "identity", elementId: "identity" },
                 { name: "hero", elementId: "hero" },
                 { name: "text", elementId: "text" },
                 { name: "work", elementId: "work" },
