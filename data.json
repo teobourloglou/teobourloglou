@@ -1,43 +1,153 @@
 {
-    "projects" : [
+    "works" : [
         {
             "title"         : "EAYTHES",
-            "description"   : "A custom-coded blog for EAYTHES built with Laravel",
-            "image"         : "/photos/eaythes-logo.svg",
-            "link"          : "#",
+            "description"   : "Custom-coded Laravel Blog",
+            "image"         : "/photos/work/eaythes-logo.svg",
+            "link"          : "https://eaythes.gr",
             "color"         : "blue",
             "hex"           : "from-[#60a5fa] to-[#1e40af]"
         },
         {
             "title"         : "Avramidis Visuals",
-            "description"   : "A custom-coded landing page for Avramidis Visuals Company",
-            "image"         : "/photos/avramidis-logo.svg",
-            "link"          : "#",
+            "description"   : "Custom-coded Landing Page",
+            "image"         : "/photos/work/avramidis-logo.svg",
+            "link"          : "https://avramidisvisuals.gr",
             "color"         : "sky",
             "hex"           : "from-[#7dd3fc] to-[#0284c7]"
         },
         {
             "title"         : "Smart Safe",
-            "description"   : "A custom-coded landing page for Smart Safe Company",
-            "image"         : "/photos/smartsafe-logo.webp",
-            "link"          : "#",
+            "description"   : "Custom-coded Landing Page",
+            "image"         : "/photos/work/smartsafe-logo.webp",
+            "link"          : "https://smart-safe.gr",
             "color"         : "red",
             "hex"           : "from-[#7f1d1d] to-[#b91c1c]"
         },
         {
             "title"         : "Spark Youth Center",
-            "description"   : "A custom-coded landing page for Spark Youth Center",
-            "image"         : "/photos/spark-logo.png",
-            "link"          : "#",
+            "description"   : "Custom-coded Landing Page",
+            "image"         : "/photos/work/spark-logo.png",
+            "link"          : "https://sparkcenter.gr",
             "color"         : "yellow",
             "hex"           : "from-[#c2410c] to-[#eab308]"
-        },        {
+        },
+        {
             "title"         : "VPaint",
-            "description"   : "A custom-coded landing page for VPaint company",
-            "image"         : "/photos/vpaint-logo.png",
-            "link"          : "#",
+            "description"   : "Custom-coded Landing Page",
+            "image"         : "/photos/work/vpaint-logo.png",
+            "link"          : "https://vpaint.gr",
             "color"         : "lime",
             "hex"           : "from-[#4d7c0f] to-[#bef264]"
+        }
+    ],
+    "projects": [
+        {
+            "title"         : "Work In Progress #1",
+            "description"   : "Biggest project yet, been working on it since February '23! Coming soon!",
+            "image"         : "/photos/projects/clinking_glasses.png",
+            "link"          : "#",
+            "technologies"  : [
+                "Laravel",
+                "Livewire",
+                "AlpineJS",
+                "TailwindCSS"
+            ]
+        },
+        {
+            "title"         : "Work In Progress #2",
+            "description"   : "Also a big project of mine! Almost done...",
+            "image"         : "/photos/projects/card_file_box.png",
+            "link"          : "#",
+            "technologies"  : [
+                "Laravel",
+                "Livewire",
+                "AlpineJS",
+                "TailwindCSS"
+            ]
+        },
+        {
+            "title"         : "Animedoro Timer",
+            "description"   : "The Animedoro studying method (inspired by Pomodoro) timer is built to help every anime loving student balance studying and binging anime.",
+            "image"         : "/photos/projects/japanese_goblin.png",
+            "link"          : "https://animedoro.com",
+            "technologies"  : [
+                "AlpineJS",
+                "TailwindCSS"
+            ]
+        },
+        {
+            "title"         : "Subnet Calculator",
+            "description"   : "Built to help me better understand the subnetting process, a tool to facilitate subnet calculations for IPv4 addresses.",
+            "image"         : "/photos/projects/satellite_antenna.png",
+            "link"          : "https://teobourloglou.github.io/subnet-calculator",
+            "technologies"  : [
+                "AlpineJS",
+                "TailwindCSS"
+            ]
+        },
+        {
+            "title"         : "Notes App",
+            "description"   : "A humble PHP CRUD application that lets you manage your notes with ease. Built on the foundations of my quest to master PHP",
+            "image"         : "/photos/projects/notebook_with_decorative_cover.png",
+            "link"          : "https://github.com/teobourloglou/notes-app",
+            "technologies"  : [
+                "PHP",
+                "TailwindCSS"
+            ]
+        },
+        {
+            "title"         : "Ti na paraggeilo",
+            "description"   : "My first ever publication on github - An app to help my indecisiveness on what to order for food",
+            "image"         : "/photos/projects/takeout_box.png",
+            "link"          : "https://ti-na-paraggeilo.gr",
+            "technologies"  : [
+                "AlpineJS",
+                "TailwindCSS"
+            ]
+        },
+        {
+            "title"         : "CSV Column Comparison",
+            "description"   : "A mini frontent app that I made to help a friend with his unique usecase. He now compares columns in his CSV files all day...",
+            "image"         : "/photos/projects/bookmark_tabs.png",
+            "link"          : "https://teobourloglou.github.io/csv-column-comparison",
+            "technologies"  : [
+                "AlpineJS",
+                "TailwindCSS"
+            ]
+        },
+        {
+            "title"         : "Budgetting App",
+            "description"   : "A university assignment to build a mobile app. My tool of choice is one that helps you track your expenses.",
+            "image"         : "/photos/projects/money_with_wings.png",
+            "link"          : "https://github.com/teobourloglou/budgetting-app",
+            "technologies"  : [
+                "Kotlin"
+            ]
+        },
+        {
+            "title"         : "Task Manager",
+            "description"   : "A task management app built with the most ancient technologies university could assign to me. I put this one last for a reason.",
+            "image"         : "/photos/projects/clipboard.png",
+            "link"          : "https://github.com/teobourloglou/task-manager",
+            "technologies"  : [
+                "Java",
+                "Java Swing"
+            ]
+        }
+    ],
+    "posts" : [
+        {
+            "title"         : "IPv4 Subnetting",
+            "image"         : "/photos/blog/SNC.jpg",
+            "sudolink"      : "https://sudorealm.com/blog/ipv4-subnetting",
+            "devlink"       : "https://dev.to/teobourloglou/ipv4-subnetting-oam"
+        },
+        {
+            "title"         : "Nested CSS Borders: A hidden puzzle",
+            "image"         : "/photos/blog/NBR.jpg",
+            "sudolink"      : "https://sudorealm.com/blog/nested-css-borders-a-hidden-puzzle",
+            "devlink"       : "https://dev.to/teobourloglou/nested-css-borders-a-hidden-puzzle-3i2c"
         }
     ]
 }

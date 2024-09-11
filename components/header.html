@@ -1,4 +1,4 @@
-<header class="bg-[#efefef]">
+<header>
     <nav
         class="flex items-center justify-between p-6 mx-auto max-w-7xl lg:px-8"
         aria-label="Global"
@@ -8,16 +8,21 @@
                 <span class="font-semibold">TEO BOURLOGLOU</span>
             </a>
             <div class="hidden lg:flex lg:gap-x-12">
-                <a
-                    href="#"
-                    class="text-sm font-semibold leading-6 text-gray-900"
-                    >ABOUT</a
-                >
-                <a
-                    href="#"
-                    class="text-sm font-semibold leading-6 text-gray-900"
-                    >WORK</a
-                >
+                <a href="#work" class="text-sm font-semibold leading-6 text-gray-900">
+                    WORK
+                </a>
+                <a href="#projects" class="text-sm font-semibold leading-6 text-gray-900">
+                    PROJECTS
+                </a>
+                <a href="#blog" class="text-sm font-semibold leading-6 text-gray-900">
+                    BLOG
+                </a>
+                <a href="#about" class="text-sm font-semibold leading-6 text-gray-900">
+                    ABOUT
+                </a>
+                <a href="#contact" class="text-sm font-semibold leading-6 text-gray-900">
+                    CONTACT
+                </a>
             </div>
         </div>
         <div class="flex lg:hidden">
@@ -42,36 +47,9 @@
                 </svg>
             </button>
         </div>
-        <button
-            @click="$clipboard('theologos.bourloglou@gmail.com')"
-            class="hidden px-3 py-1 shadow-sm lg:flex lg:items-center lg:gap-x-4 lg:bg-white lg:rounded-full"
-        >
-            <span
-                class="text-sm font-semibold leading-6 text-gray-900"
-                >theologos.bourloglou@gmail.com</span
-            >
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 h-5"
-                width="24"
-                height="24"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                stroke-linecap="round"
-                stroke-linejoin="round"
-                class="icon icon-tabler icons-tabler-outline icon-tabler-copy"
-            >
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
-                <path
-                    d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z"
-                />
-                <path
-                    d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1"
-                />
-            </svg>
-        </button>
+        <a href="mailto:theologos.bourloglou@gmail.com" class="hidden px-3 py-1 text-sm font-semibold shadow-sm text-neutral-900 lg:flex lg:items-center lg:gap-x-4 lg:bg-white lg:rounded-full">
+            theologos.bourloglou@gmail.com
+        </a>
     </nav>
     <!-- Mobile menu, show/hide based on menu open state. -->
     <div class="lg:hidden" role="dialog" aria-modal="true">

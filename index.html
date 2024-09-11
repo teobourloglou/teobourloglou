@@ -13,8 +13,8 @@
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" ></script>
         <script src="./app.js"></script>
     </head>
-    <body>
-        <div x-data="fetchData()" x-init="loadData" class="bg-[#efefef] grid-container max-w-7xl mx-auto">
+    <body class="bg-gradient-to-b from-stone-100 to-stone-200">
+        <div x-data="fetchData()" x-init="loadData" class="mx-auto grid-container max-w-7xl">
             <div id="header"></div>
             <div class="grid grid-cols-2">
                 <div id="identity"></div>
@@ -22,7 +22,9 @@
                     <div id="hero"></div>
                     <div id="text"></div>
                     <div id="work"></div>
-                    <div id="articles"></div>
+                    <div id="projects"></div>
+                    <div id="blog"></div>
+                    <div id="contact"></div>
                 </div>
             </div>
         </div>
@@ -34,7 +36,9 @@
                 { name: "hero",     elementId: "hero" },
                 { name: "text",     elementId: "text" },
                 { name: "work",     elementId: "work" },
-                { name: "articles", elementId: "articles" },
+                { name: "projects", elementId: "projects" },
+                { name: "blog",     elementId: "blog" },
+                { name: "contact",  elementId: "contact" },
             ];
             fetchComponents(homeComponents);
         </script>
