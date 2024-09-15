@@ -1,0 +1,58 @@
+<div id="about" class="pb-24 sm:pb-32"></div>
+    <div class="px-6 mx-auto max-w-7xl lg:px-8">
+        <div class="flex flex-col items-center justify-center max-w-xl mx-auto gap-y-32">
+            <h2 class="text-3xl font-normal text-center">Check out some more information about me.</h2>
+            <div>
+                  <div class="grid max-w-lg mx-auto gap-y-5 gap-x-5 lg:max-w-none lg:grid-cols-3">
+                    <div class="relative flex flex-col overflow-hidden scale-90 rounded-lg shadow-lg -bottom-5 -right-8 -rotate-12">
+                        <img class="object-cover w-full h-48 aspect-square" src="/photos/IMG_5621.JPG" alt="">
+                    </div>
+                    <div class="z-20 flex flex-col overflow-hidden rounded-lg shadow-lg">
+                        <img class="object-cover w-full h-48 aspect-square " src="/photos/DSC_1134.jpg" alt="">
+                    </div>
+                    <div class="relative flex flex-col overflow-hidden scale-90 rounded-lg shadow-lg -bottom-5 -left-8 rotate-12">
+                        <img class="object-cover w-full h-48 aspect-square" src="/photos/IMG_1823.JPG" alt="">
+                    </div>
+                  </div>
+              </div>
+              <h2 class="text-2xl font-normal text-center">When I'm not in front of a computer I enjoy hanging out with friends, traveling somewhere or watching anime.<br><br> Some other things that I'm passionate about: design, minimalism, business, japanese culture and of course code.</h2>
+              <h2 class="text-3xl font-normal text-center">What I've been up to for the recent years ↓</h2>
+              <div class="flow-root">
+                <ul role="list" class="-mb-8">
+                    <template x-for="position in data.positions"
+                        <li>
+                            <div class="relative pb-8">
+                                <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-neutral-900" aria-hidden="true"></span>
+                                <div class="relative flex space-x-3 ">
+                                    <span class="flex items-center justify-center w-8 h-8 bg-white rounded-full ring-4 ring-white">
+                                        <img class="size-6" :src="position.image" alt="">
+                                    </span>
+                                    <div class="relative flex flex-col items-start flex-1 left-3 -top-2">
+                                        <h6 class="font-semibold text-neutral-900" x-text="position.title"></h6>
+                                        <p class="text-sm text-neutral-500" x-text="position.date"></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </template>
+                    <li>
+                        <div class="relative pb-8">
+                            <div class="relative flex space-x-3">
+                                <div>
+                                    <span class="flex items-center justify-center w-8 h-8 bg-white rounded-full ring-4 ring-white">
+                                        <img class="size-6" src="/photos/positions/autospark.png" alt="">
+                                    </span>
+                                </div>
+                                <div class="relative flex flex-col items-start flex-1 left-3 -top-2">
+                                    <h6 class="font-semibold text-neutral-900">Autospark - eCommerce Manager</h6>
+                                    <p class="text-sm text-neutral-500">September 2020 - August 2021</p>
+                                </div>
+                            </div>
+                        </div>
+                      </li>
+                      <p>*While doing those I'm also getting my university degree in Information and Electronic Systems Engineering.</p>
+                </ul>
+            </div>
+
+        </div>
+    </div>
