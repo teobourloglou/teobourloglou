@@ -1,50 +1,38 @@
-<header>
+<header x-data="{ menuOpen : false}">
     <nav
         class="flex items-center justify-between p-6 mx-auto max-w-7xl lg:px-8"
         aria-label="Global"
     >
         <div class="flex items-center gap-x-16">
-            <a href="#" class="-m-1.5 p-1.5">
+            <a href="/" class="-m-1.5 p-1.5">
                 <span class="font-semibold">TEO BOURLOGLOU</span>
             </a>
             <div class="hidden lg:flex lg:gap-x-12">
-                <a href="#work" class="text-sm font-semibold leading-6 text-gray-900">
+                <a href="#work" class="text-sm font-semibold leading-6 text-neutral-900">
                     WORK
                 </a>
-                <a href="#projects" class="text-sm font-semibold leading-6 text-gray-900">
+                <a href="#projects" class="text-sm font-semibold leading-6 text-neutral-900">
                     PROJECTS
                 </a>
-                <a href="#about" class="text-sm font-semibold leading-6 text-gray-900">
+                <a href="#about" class="text-sm font-semibold leading-6 text-neutral-900">
                     ABOUT
                 </a>
-                <a href="#blog" class="text-sm font-semibold leading-6 text-gray-900">
+                <a href="#blog" class="text-sm font-semibold leading-6 text-neutral-900">
                     BLOG
                 </a>
-                <a href="#contact" class="text-sm font-semibold leading-6 text-gray-900">
+                <a href="#contact" class="text-sm font-semibold leading-6 text-neutral-900">
                     CONTACT
                 </a>
             </div>
         </div>
         <div class="flex lg:hidden">
             <button
+                @click="menuOpen = true"
                 type="button"
-                class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-gray-700"
+                class="-m-2.5 inline-flex items-center justify-center rounded-md p-2.5 text-neutral-900"
             >
                 <span class="sr-only">Open main menu</span>
-                <svg
-                    class="w-6 h-6"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke-width="1.5"
-                    stroke="currentColor"
-                    aria-hidden="true"
-                >
-                    <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
-                    />
-                </svg>
+                <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-menu"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M4 8l16 0" /><path d="M4 16l16 0" /></svg>
             </button>
         </div>
         <button
@@ -52,7 +40,7 @@
             class="hidden px-3 py-1 shadow-sm lg:flex lg:items-center lg:gap-x-4 lg:bg-white lg:rounded-full"
         >
             <span
-                class="text-sm font-semibold leading-6 text-gray-900"
+                class="text-sm font-semibold leading-6 text-neutral-900"
                 >theologos.bourloglou@gmail.com</span
             >
             <svg
@@ -81,69 +69,74 @@
     <!-- Mobile menu, show/hide based on menu open state. -->
     <div class="lg:hidden" role="dialog" aria-modal="true">
         <!-- Background backdrop, show/hide based on slide-over state. -->
-        <div class="fixed inset-0 z-10"></div>
         <div
-            class="fixed inset-y-0 right-0 z-10 w-full px-6 py-6 overflow-y-auto bg-white sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
+            x-show="menuOpen"
+            class="fixed inset-y-0 right-0 z-50 w-full px-6 py-6 overflow-y-auto bg-neutral-900 sm:max-w-sm sm:ring-1 sm:ring-gray-900/10"
         >
             <div class="flex items-center justify-between">
                 <a href="#" class="-m-1.5 p-1.5">
-                    <span class="sr-only">Your Company</span>
-                    <img
-                        class="w-auto h-8"
-                        src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
-                        alt=""
-                    />
+                    <span class="sr-only">Teo Bourloglou</span>
+                    <span class="font-semibold text-neutral-100">TEO BOURLOGLOU</span>
                 </a>
                 <button
+                    @click="menuOpen = false"
                     type="button"
-                    class="-m-2.5 rounded-md p-2.5 text-gray-700"
+                    class="-m-2.5 rounded-md p-2.5 text-neutral-100"
                 >
                     <span class="sr-only">Close menu</span>
-                    <svg
-                        class="w-6 h-6"
-                        fill="none"
-                        viewBox="0 0 24 24"
-                        stroke-width="1.5"
-                        stroke="currentColor"
-                        aria-hidden="true"
-                    >
-                        <path
-                            stroke-linecap="round"
-                            stroke-linejoin="round"
-                            d="M6 18L18 6M6 6l12 12"
-                        />
-                    </svg>
+                    <svg  xmlns="http://www.w3.org/2000/svg"  width="24"  height="24"  viewBox="0 0 24 24"  fill="none"  stroke="currentColor"  stroke-width="2"  stroke-linecap="round"  stroke-linejoin="round"  class="icon icon-tabler icons-tabler-outline icon-tabler-x"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M18 6l-12 12" /><path d="M6 6l12 12" /></svg>
                 </button>
             </div>
             <div class="flow-root mt-6">
-                <div class="-my-6 divide-y divide-gray-500/10">
+                <div class="-my-6">
                     <div class="py-6 space-y-2">
-                        <a
-                            href="#"
-                            class="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
-                            >Product</a
-                        >
-                        <a
-                            href="#"
-                            class="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
-                            >Features</a
-                        >
-                        <a
-                            href="#"
-                            class="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
-                            >Marketplace</a
-                        >
-                        <a
-                            href="#"
-                            class="block px-3 py-2 -mx-3 text-base font-semibold leading-7 text-gray-900 rounded-lg hover:bg-gray-50"
-                            >Company</a
-                        >
+                        <a @click="menuOpen = false" href="#work" class="block px-3 py-2 -mx-3 text-sm font-semibold leading-7 rounded-lg text-neutral-100">
+                            WORK
+                        </a>
+                        <a @click="menuOpen = false" href="#projects" class="block px-3 py-2 -mx-3 text-sm font-semibold leading-7 rounded-lg text-neutral-100">
+                            PROJECTS
+                        </a>
+                        <a @click="menuOpen = false" href="#about" class="block px-3 py-2 -mx-3 text-sm font-semibold leading-7 rounded-lg text-neutral-100">
+                            ABOUT
+                        </a>
+                        <a @click="menuOpen = false" href="#blog" class="block px-3 py-2 -mx-3 text-sm font-semibold leading-7 rounded-lg text-neutral-100">
+                            BLOG
+                        </a>
+                        <a @click="menuOpen = false" href="#contact" class="block px-3 py-2 -mx-3 text-sm font-semibold leading-7 rounded-lg text-neutral-100">
+                            CONTACT
+                        </a>
                     </div>
                     <div class="py-6">
-                        <a
-                            href="#"
-                            class="-mx-3 block rounded-lg px-3 py-2.5 text-base font-semibold leading-7 text-gray-900 hover:bg-gray-50"
-                            >Log in</a>
+                        <button
+                            @click="window.navigator.clipboard.writeText('theologos.bourloglou@gmail.com');"
+                            class="flex items-center px-3 py-1 bg-white rounded-full shadow-sm gap-x-4"
+                        >
+                            <span
+                                class="text-sm font-semibold leading-6 text-neutral-900"
+                                >theologos.bourloglou@gmail.com</span
+                            >
+                            <svg
+                                xmlns="http://www.w3.org/2000/svg"
+                                class="w-5 h-5"
+                                width="24"
+                                height="24"
+                                viewBox="0 0 24 24"
+                                fill="none"
+                                stroke="currentColor"
+                                stroke-width="2"
+                                stroke-linecap="round"
+                                stroke-linejoin="round"
+                                class="icon icon-tabler icons-tabler-outline icon-tabler-copy"
+                            >
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path
+                                    d="M7 7m0 2.667a2.667 2.667 0 0 1 2.667 -2.667h8.666a2.667 2.667 0 0 1 2.667 2.667v8.666a2.667 2.667 0 0 1 -2.667 2.667h-8.666a2.667 2.667 0 0 1 -2.667 -2.667z"
+                                />
+                                <path
+                                    d="M4.012 16.737a2.005 2.005 0 0 1 -1.012 -1.737v-10c0 -1.1 .9 -2 2 -2h10c.75 0 1.158 .385 1.5 1"
+                                />
+                            </svg>
+                        </button>
                     </div>
                 </div>
             </div>

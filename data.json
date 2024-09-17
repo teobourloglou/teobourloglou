@@ -152,22 +152,22 @@
     ],
     "positions" : [
         {
-            "title" : "Army",
-            "description" : "",
-            "date"  : "November 2024 - July 2025",
-            "image" : "/photos/positions/army.png"
+            "title"         : "Army",
+            "description"   : "",
+            "date"          : "November 2024 - July 2025",
+            "image"         : "/photos/positions/army.png"
         },
         {
-            "title" : "Freelancing & Learning more!",
-            "description" : "",
-            "date"  : "September 2023 - October 2024",
-            "image" : "/photos/positions/freelancing.png"
+            "title"         : "Freelancing & Learning more!",
+            "description"   : "",
+            "date"          : "September 2023 - October 2024",
+            "image"         : "/photos/positions/freelancing.png"
         },
         {
-            "title" : "DTek - Junior Web Developer",
-            "description" : "Junior Front End Developer",
-            "date"  : "April 2022 - August 2023",
-            "image" : "/photos/positions/dtek.png"
+            "title"         : "DTek - Junior Web Developer",
+            "description"   : "Junior Front End Developer",
+            "date"          : "April 2022 - August 2023",
+            "image"         : "/photos/positions/dtek.png"
         }
     ]
 }
