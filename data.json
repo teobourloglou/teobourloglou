@@ -139,13 +139,13 @@
     "posts" : [
         {
             "title"         : "IPv4 Subnetting",
-            "image"         : "/photos/blog/SNC.jpg",
+            "image"         : "/photos/blog/SNC.png",
             "sudolink"      : "https://sudorealm.com/blog/ipv4-subnetting",
             "devlink"       : "https://dev.to/teobourloglou/ipv4-subnetting-oam"
         },
         {
             "title"         : "Nested CSS Borders: A hidden puzzle",
-            "image"         : "/photos/blog/NBR.jpg",
+            "image"         : "/photos/blog/NBR.png",
             "sudolink"      : "https://sudorealm.com/blog/nested-css-borders-a-hidden-puzzle",
             "devlink"       : "https://dev.to/teobourloglou/nested-css-borders-a-hidden-puzzle-3i2c"
         }
