@@ -33,6 +33,14 @@
             "hex"           : "from-[#c2410c] to-[#eab308]"
         },
         {
+            "title"         : "Shooter's Roll",
+            "description"   : "Custom-coded Landing Page",
+            "image"         : "/photos/work/shootersroll-logo.png",
+            "link"          : "https://shootersroll.gr",
+            "color"         : "zinc",
+            "hex"           : "from-[#acacac] to-[#e1e1e1]"
+        },
+        {
             "title"         : "VPaint",
             "description"   : "Custom-coded Landing Page",
             "image"         : "/photos/work/vpaint-logo.png",
