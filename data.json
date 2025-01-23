@@ -115,10 +115,10 @@
             ]
         },
         {
-            "title"         : "CSV Column Comparison",
-            "description"   : "A mini frontent app that I made to help a friend with his unique usecase. He now compares columns in his CSV files all day...",
-            "image"         : "/photos/projects/bookmark_tabs.png",
-            "link"          : "https://teobourloglou.github.io/csv-column-comparison",
+            "title"         : "Multiple Gene Set Comparison Tool",
+            "description"   : "A mini frontent app that I made to help a friend with his research. He now compares gene sets all day...",
+            "image"         : "/photos/projects/dna.png",
+            "link"          : "https://teobourloglou.github.io/multiple-gene-set-comparison",
             "technologies"  : [
                 "AlpineJS",
                 "TailwindCSS"
