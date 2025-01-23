@@ -1,19 +1,15 @@
-# 💼 Portfolio
+### Hey there! 👋🏼  
 
-**Hi there!** I'm Teo, a passionate developer who creates **smooth, simple, and elegant digital experiences**. Fueled by my passion for modern technologies, I build products that I'm proud of while constantly learning along the way!
+I'm **Teo**, a passionate coder from Greece who loves learning and building awesome web experiences. I enjoy crafting smooth, simple, and efficient websites and web applications.  
 
+🌐 **Check out my work:**  
+Want to see what I’ve been working on? Visit my portfolio: [teobourloglou.com](https://teobourloglou.github.io/portfolio)  
 
-## 🌐 Personal Website
+🛠️ **Tech I work with:**  
+I primarily work with **PHP** and **JavaScript**, and I'm constantly striving to deepen my understanding of these languages.  
+Some of the frameworks and tools I work with are **Laravel, Livewire, TailwindCSS,** and **AlpineJS**, and I’m eager to grow my expertise in them while also exploring new technologies. 
 
-You can visit my website to learn more: [teobourloglou.com](https://teobourloglou.github.io/portfolio)
+📨 **Let's connect!**  
+Have an exciting project in mind? Looking to collaborate? Feel free to reach out—I'm always open to new opportunities: [theologos.bourloglou@gmail.com](mailto:theologos.bourloglou@gmail.com)  
 
-
-## 💬 Let’s Chat!
-
-Are you interested in working together or have a project in mind? Feel free to reach out! I’m always open to collaborating on exciting ideas. Drop me an email, and let’s make something awesome together.
-
-**Email**: [theologos.bourloglou@gmail.com](mailto:theologos.bourloglou@gmail.com)
-
----
-
-**✨ Thanks for stopping by! Let’s build something amazing together.** 🤙🏼
+**Thanks for dropping by! 🤙🏼**  
