@@ -6,7 +6,7 @@
             "image"         : "/photos/work/eaythes-logo.svg",
             "link"          : "https://eaythes.gr",
             "color"         : "blue",
-            "hex"           : "from-[#60a5fa] to-[#1e40af]"
+            "hex"           : "bg-linear-[0deg,#60a5fa_5%,#1e40af_90%]"
         },
         {
             "title"         : "Avramidis Visuals",
@@ -14,7 +14,7 @@
             "image"         : "/photos/work/avramidis-logo.svg",
             "link"          : "https://avramidisvisuals.gr",
             "color"         : "sky",
-            "hex"           : "from-[#7dd3fc] to-[#0284c7]"
+            "hex"           : "bg-linear-[0deg,#7dd3fc_5%,#0284c7_90%]"
         },
         {
             "title"         : "Smart Safe",
@@ -22,7 +22,7 @@
             "image"         : "/photos/work/smartsafe-logo.webp",
             "link"          : "https://smart-safe.gr",
             "color"         : "red",
-            "hex"           : "from-[#7f1d1d] to-[#b91c1c]"
+            "hex"           : "bg-linear-[0deg,#7f1d1d_5%,#b91c1c_90%]"
         },
         {
             "title"         : "Spark Youth Center",
@@ -30,7 +30,7 @@
             "image"         : "/photos/work/spark-logo.png",
             "link"          : "https://sparkcenter.gr",
             "color"         : "yellow",
-            "hex"           : "from-[#c2410c] to-[#eab308]"
+            "hex"           : "bg-linear-[0deg,#c2410c_5%,#eab308_90%]"
         },
         {
             "title"         : "Shooter's Roll",
@@ -38,7 +38,7 @@
             "image"         : "/photos/work/shootersroll-logo.png",
             "link"          : "https://shootersroll.gr",
             "color"         : "zinc",
-            "hex"           : "from-[#acacac] to-[#e1e1e1]"
+            "hex"           : "bg-linear-[0deg,#acacac_5%,#e1e1e1_90%]"
         },
         {
             "title"         : "VPaint",
@@ -46,24 +46,25 @@
             "image"         : "/photos/work/vpaint-logo.png",
             "link"          : "https://vpaint.gr",
             "color"         : "lime",
-            "hex"           : "from-[#4d7c0f] to-[#bef264]"
+            "hex"           : "bg-linear-[0deg,#4d7c0f_5%,#bef264_90%]"
         }
     ],
     "projects": [
         {
-            "title"         : "Work In Progress #1",
-            "description"   : "Biggest project yet, been working on it since February '23! Coming soon!",
-            "image"         : "/photos/projects/clinking_glasses.png",
-            "link"          : "#",
+            "title"         : "qrumbl.io",
+            "description"   : "My first big SaaS product. On Closed BETA.",
+            "image"         : "/photos/projects/qrumblio.png",
+            "link"          : "https://qrumbl.io",
             "technologies"  : [
                 "Laravel",
                 "Livewire",
                 "AlpineJS",
-                "TailwindCSS"
+                "TailwindCSS",
+                "Lemonsqueezy"
             ]
         },
         {
-            "title"         : "Work In Progress #2",
+            "title"         : "Work In Progress",
             "description"   : "Also a big project of mine! Almost done...",
             "image"         : "/photos/projects/card_file_box.png",
             "link"          : "#",
@@ -95,16 +96,6 @@
             ]
         },
         {
-            "title"         : "Notes App",
-            "description"   : "A humble PHP CRUD application that lets you manage your notes with ease. Built on the foundations of my quest to master PHP",
-            "image"         : "/photos/projects/notebook_with_decorative_cover.png",
-            "link"          : "https://github.com/teobourloglou/notes-app",
-            "technologies"  : [
-                "PHP",
-                "TailwindCSS"
-            ]
-        },
-        {
             "title"         : "Ti na paraggeilo",
             "description"   : "My first ever publication on github - An app to help my indecisiveness on what to order for food",
             "image"         : "/photos/projects/takeout_box.png",
@@ -125,6 +116,16 @@
             ]
         },
         {
+            "title"         : "Notes App",
+            "description"   : "A humble PHP CRUD application that lets you manage your notes with ease. Built on the foundations of my quest to master PHP",
+            "image"         : "/photos/projects/notebook_with_decorative_cover.png",
+            "link"          : "https://github.com/teobourloglou/notes-app",
+            "technologies"  : [
+                "PHP",
+                "TailwindCSS"
+            ]
+        },
+        {
             "title"         : "Budgetting App",
             "description"   : "A university assignment to build a mobile app. My tool of choice is one that helps you track your expenses.",
             "image"         : "/photos/projects/money_with_wings.png",
@@ -135,7 +136,7 @@
         },
         {
             "title"         : "Task Manager",
-            "description"   : "A task management app built with the most ancient technologies university could assign to me. I put this one last for a reason.",
+            "description"   : "A task management app built with ancient technologies. A university assignment.",
             "image"         : "/photos/projects/clipboard.png",
             "link"          : "https://github.com/teobourloglou/task-manager",
             "technologies"  : [
