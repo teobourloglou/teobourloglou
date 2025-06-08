@@ -1,0 +1,17 @@
+<div id="process" class="pb-24 sm:pb-32">
+    <div class="px-6 mx-auto max-w-7xl lg:px-8">
+        <div class="grid max-w-2xl grid-cols-1 gap-4 mx-auto mt-16 auto-rows-fr sm:mt-20 lg:mx-0 lg:max-w-none sm:grid-cols-2">
+
+            <template x-for="step in data.process">
+                <div x-bind:style="{'transform-origin' : step.origin}" class="flex flex-col sm:aspect-3/2 group hover:bg-neutral-800 hover:scale-105 hover:z-20 relative transition-all duration-300 bg-neutral-200 rounded-xl p-4 items-start justify-between">
+                    <img :src="step.svg" class="object-contain w-10 relative transition-all duration-300 group-hover:opacity-60 group-hover:scale-110 group-hover:invert" alt="">
+                    <h3 x-text="step.title" class="text-xl font-medium text-neutral-900 group-hover:invert transition-colors duration-300"></h3>
+                    <p x-text="step.description" class="font-normal text-neutral-700 group-hover:invert transition-colors duration-300"></p>
+                </div>
+
+            </template>
+
+        </div>
+    </div>
+</div>
+

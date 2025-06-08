@@ -14,6 +14,7 @@
         <link rel="icon" href="/photos/favicon.ico" type="image/x-icon">
         <link rel="shortcut icon" href="/photos/favicon.ico" type="image/x-icon">
 
+        <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
         <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" ></script>
         <script src="./app.js"></script>
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-22NYESRMH7"></script>
@@ -33,27 +34,39 @@
                 <div id="identity"></div>
                 <div class="overflow-hidden">
                     <div id="hero"></div>
-                    <div id="text"></div>
-                    <div id="work"></div>
-                    <div id="projects"></div>
-                    <div id="about"></div>
-                    <div id="blog"></div>
-                    <div id="contact"></div>
                 </div>
             </div>
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+                <div id="trust"></div>
+                <div class="overflow-hidden">
+                    <div id="process"></div>
+                </div>
+            </div>
+            <div id="work"></div>
+            <div class="grid grid-cols-1 lg:grid-cols-2">
+                <div id="journey"></div>
+                <div class="overflow-hidden">
+                    <div id="steps"></div>
+                </div>
+            </div>
+            <div id="cta"></div>
+            <div id="profile"></div>
+            <div id="footer"></div>
         </div>
 
         <script>
             const homeComponents = [
-                { name: "header",   elementId: "header" },
-                { name: "identity", elementId: "identity" },
-                { name: "hero",     elementId: "hero" },
-                { name: "text",     elementId: "text" },
-                { name: "work",     elementId: "work" },
-                { name: "projects", elementId: "projects" },
-                { name: "about",    elementId: "about" },
-                { name: "blog",     elementId: "blog" },
-                { name: "contact",  elementId: "contact" },
+                { name: "header",   elementId: "header"     },
+                { name: "identity", elementId: "identity"   },
+                { name: "hero",     elementId: "hero"       },
+                { name: "trust",  elementId: "trust"    },
+                { name: "process",  elementId: "process"    },
+                { name: "work",     elementId: "work"       },
+                { name: "journey",  elementId: "journey"    },
+                { name: "steps",    elementId: "steps"      },
+                { name: "cta",      elementId: "cta"        },
+                { name: "profile",  elementId: "profile"    },
+                { name: "footer",   elementId: "footer"     },
             ];
             fetchComponents(homeComponents);
         </script>

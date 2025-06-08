@@ -1,0 +1,17 @@
+<div  id="steps" class="pb-24 sm:pb-32">
+    <div class="px-6 mx-auto max-w-7xl lg:px-8">
+        <div class="grid max-w-2xl grid-cols-1 gap-6 mx-auto mt-16 auto-rows-fr sm:mt-20 lg:mx-0 lg:max-w-none">
+
+            <template x-for="(step, index) in data.steps" :key="index">
+                <div class="flex items-center group gap-x-4 hover:bg-neutral-300 rounded-xl transition-colors duration-800 lg:p-4 justify-between">
+                    <div class="aspect-square flex justify-center relative items-center bg-neutral-900 text-white text-xl font-semibold text-center p-3 w-10 h-10 rounded-full">
+                        <img :src="step.icon" class="object-contain absolute w-5 h-5 opacity-0 group-hover:opacity-100 duration-500 delay-300" alt="">
+                        <span x-text="index + 1" class="opacity-100 group-hover:opacity-0 delay-300 duration-500"></span>
+                    </div>
+                    <p><span class="font-semibold" x-text="step.title"></span><span x-text="step.description"></span></p>
+                </div>
+            </template>
+
+        </div>
+    </div>
+</div>

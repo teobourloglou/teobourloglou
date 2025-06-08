@@ -1,0 +1,55 @@
+<div id="profile" class="mt-32">
+    <div class="px-6 mx-auto max-w-7xl lg:px-8">
+        <div class="grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-8 max-w-7xl justify-between gap-4 mx-auto mt-16 sm:mt-20 pb-16 lg:mx-0 lg:max-w-none">
+
+            <template x-for="tool in data.tools">
+                <div class="relative group bg-neutral-300 rounded-xl p-4 flex justify-center items-center">
+                    <img :src="tool.icon" class="w-12 h-12 aspect-square" alt="tool.title">
+                    <div x-text="tool.title" class="absolute bottom-full left-1/2 transform transform-opacity duration-200 -translate-x-1/2 mb-2 w-max px-2 py-1 text-sm text-white bg-neutral-700 rounded shadow-lg opacity-0 group-hover:opacity-100"></div>
+                </div>
+            </template>
+
+        </div>
+        <div class="flex flex-col lg:flex-row justify-between items-start lg:items-end max-w-7xl gap-4 py-16 border-y border-neutral-400 lg:max-w-none">
+            <ul role="list">
+                <template x-for="position in data.positions"
+                    <li>
+                        <div class="relative pb-8">
+                            <span class="absolute left-4 top-4 -ml-px h-full w-0.5 bg-neutral-400" aria-hidden="true"></span>
+                            <div class="relative flex space-x-3 ">
+                                <span class="flex items-center justify-center w-8 h-8 bg-neutral-300 rounded-full ring-4 ring-neutral-300">
+                                    <img class="w-6 h-auto" :src="position.image" alt="">
+                                </span>
+                                <div class="relative flex flex-col items-start flex-1 left-3 -top-2">
+                                    <h6 class="font-semibold text-neutral-900" x-text="position.title"></h6>
+                                    <p class="text-sm text-neutral-500" x-text="position.date"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </template>
+                <li>
+                    <div class="relative pb-8">
+                        <div class="relative flex space-x-3">
+                            <div>
+                                <span class="flex items-center justify-center w-8 h-8 bg-neutral-300 rounded-full ring-4 ring-neutral-300">
+                                    <img class="size-6" src="/photos/positions/autospark.png" alt="">
+                                </span>
+                            </div>
+                            <div class="relative flex flex-col items-start flex-1 left-3 -top-2">
+                                <h6 class="font-semibold text-neutral-900">Autospark - eCommerce Manager</h6>
+                                <p class="text-sm text-neutral-500">September 2020 - August 2021</p>
+                            </div>
+                        </div>
+                    </div>
+                    </li>
+                    <p class="text-neutral-900">*While doing those I'm also getting my university degree in Information and Electronic Systems Engineering.</p>
+                </ul>
+                <div class="flex items-start lg:items-end justify-end h-full flex-col gap-4">
+                    <a href="https://x.com/teobourloglou" target="_blank">X / Twitter</a>
+                    <a href="https://github.com/teobourloglou" target="_blank">Github</a>
+                    <a href="https://www.linkedin.com/in/theologos-bourloglou-78759621b/" target="_blank">LinkedIn</a>
+                </div>
+        </div>
+    </div>
+</div>
