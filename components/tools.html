@@ -1,0 +1,12 @@
+<div class="px-6 mx-auto max-w-7xl lg:px-8 mt-32">
+    <div class="grid grid-cols-2 lg:grid-cols-5 max-w-7xl justify-between gap-4 mx-auto mt-16 sm:mt-20 pb-16 lg:mx-0 lg:max-w-none">
+
+        <template x-for="tool in data.tools">
+            <div class="relative group bg-neutral-300 rounded-xl p-4 flex justify-center items-center">
+                <img :src="tool.icon" class="w-12 h-12 aspect-square" alt="tool.title">
+                <div x-text="tool.title" class="absolute bottom-full left-1/2 transform transform-opacity duration-200 -translate-x-1/2 mb-2 w-max px-2 py-1 text-sm text-white bg-neutral-700 rounded shadow-lg opacity-0 group-hover:opacity-100"></div>
+            </div>
+        </template>
+
+    </div>
+</div>

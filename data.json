@@ -1,4 +1,5 @@
 {
+    "showForm" : false,
     "process" : [
         {
             "title"         : "Thoughtful, Personalized Work",
@@ -47,12 +48,12 @@
             "delay"         : "600ms"
         },
         {
-            "title"         : "Custom-built product showcase for Smart Safe",
-            "description"   : "Designed and developed a tailored website that presents Smart-Safe’s core products in a clean, engaging layout. The site balances visuals with essential info, guiding visitors to understand each offering and easily connect with the sales team for next steps.",
-            "image"         : "/photos/work/smartsafe-logo.webp",
-            "link"          : "https://smart-safe.gr",
-            "color"         : "red",
-            "hex"           : "bg-linear-[0deg,#7f1d1d_5%,#b91c1c_90%]",
+            "title"         : "Custom-built product showcase for Shooter's Roll",
+            "description"   : "Built a clean, focused website that showcases Shooter’s Roll basketballs with clarity and style. The layout highlights product features and purchasing options, giving customers a smooth, distraction-free browsing experience.",
+            "image"         : "/photos/work/shootersroll-logo.png",
+            "link"          : "https://shootersroll.gr",
+            "color"         : "zinc",
+            "hex"           : "bg-linear-[0deg,#acacac_5%,#e1e1e1_90%]",
             "colspan"       : "2",
             "delay"         : "300ms"
         },
@@ -65,16 +66,6 @@
             "hex"           : "bg-linear-[0deg,#c2410c_5%,#eab308_90%]",
             "colspan"       : "3",
             "delay"         : "600ms"
-        },
-        {
-            "title"         : "Custom-built product showcase for Shooter's Roll",
-            "description"   : "Built a clean, focused website that showcases Shooter’s Roll basketballs with clarity and style. The layout highlights product features and purchasing options, giving customers a smooth, distraction-free browsing experience.",
-            "image"         : "/photos/work/shootersroll-logo.png",
-            "link"          : "https://shootersroll.gr",
-            "color"         : "zinc",
-            "hex"           : "bg-linear-[0deg,#acacac_5%,#e1e1e1_90%]",
-            "colspan"       : "3",
-            "delay"         : "300ms"
         },
         {
             "title"         : "Custom-built one-page for VPaint",
@@ -125,6 +116,10 @@
             "title" : "Laravel"
         },
         {
+            "icon"  : "photos/tools/vue.svg",
+            "title" : "Vue"
+        },
+        {
             "icon"  : "photos/tools/livewire.svg",
             "title" : "Livewire"
         },
@@ -135,28 +130,12 @@
         {
             "icon"  : "photos/tools/tailwind.svg",
             "title" : "TailwindCSS"
-        },
-        {
-            "icon"  : "photos/tools/figma.svg",
-            "title" : "Figma"
-        },
-        {
-            "icon"  : "photos/tools/webflow.svg",
-            "title" : "Webflow"
-        },
-        {
-            "icon"  : "photos/tools/framer.svg",
-            "title" : "Framer"
-        },
-        {
-            "icon"  : "photos/tools/wordpress.svg",
-            "title" : "Wordpress"
         }
     ],
     "projects": [
         {
             "title"         : "qrumbl.io",
-            "description"   : "My first big SaaS product. On Closed BETA.",
+            "description"   : "A SaaS product. On Closed BETA. Visit to see some more.",
             "image"         : "/photos/projects/qrumblio.png",
             "link"          : "https://qrumbl.io",
             "technologies"  : [
@@ -168,22 +147,10 @@
             ]
         },
         {
-            "title"         : "Work In Progress",
-            "description"   : "Also a big project of mine! Almost done...",
-            "image"         : "/photos/projects/card_file_box.png",
-            "link"          : "#",
-            "technologies"  : [
-                "Laravel",
-                "Livewire",
-                "AlpineJS",
-                "TailwindCSS"
-            ]
-        },
-        {
             "title"         : "Animedoro Timer",
             "description"   : "The Animedoro studying method (inspired by Pomodoro) timer is built to help every anime loving student balance studying and binging anime.",
             "image"         : "/photos/projects/japanese_goblin.png",
-            "link"          : "https://animedoro.com",
+            "link"          : "https://teobourloglou.github.io/animedoro-timer/",
             "technologies"  : [
                 "AlpineJS",
                 "TailwindCSS"
@@ -203,7 +170,7 @@
             "title"         : "Ti na paraggeilo",
             "description"   : "My first ever publication on github - An app to help my indecisiveness on what to order for food",
             "image"         : "/photos/projects/takeout_box.png",
-            "link"          : "https://ti-na-paraggeilo.gr",
+            "link"          : "https://teobourloglou.github.io/ti-na-paraggeilo/",
             "technologies"  : [
                 "AlpineJS",
                 "TailwindCSS"
@@ -264,6 +231,12 @@
         }
     ],
     "positions" : [
+        {
+            "title"         : "Hack The Box",
+            "description"   : "Software Engineering Intern",
+            "date"          : "September 2025 - Present",
+            "image"         : "/photos/positions/hackthebox.png"
+        },
         {
             "title"         : "Army",
             "description"   : "",

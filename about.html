@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="I create websites & web apps">
+
+        <title>Teo Bourloglou</title>
+
+        <link href="./input.css" rel="stylesheet" />
+        <link href="./dist/output.css" rel="stylesheet" />
+        <link rel="preconnect" href="https://fonts.bunny.net">
+        <link href="https://fonts.bunny.net/css?family=assistant:200,300,400,500,600,700,800" rel="stylesheet" />
+        <link rel="icon" href="/photos/favicon.ico" type="image/x-icon">
+        <link rel="shortcut icon" href="/photos/favicon.ico" type="image/x-icon">
+
+        <script defer src="https://cdn.jsdelivr.net/npm/@alpinejs/intersect@3.x.x/dist/cdn.min.js"></script>
+        <script defer src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" ></script>
+        <script src="./app.js"></script>
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-22NYESRMH7"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', 'G-22NYESRMH7');
+        </script>
+
+    </head>
+    <body class="bg-neutral-100 font-assistant min-h-screen">
+        <div x-data="fetchData()" x-init="loadData" class="mx-auto grid-container max-w-7xl">
+            <div id="header"></div>
+            <div class="px-6 mx-auto lg:px-8 pt-32">
+                <div id="about"></div>
+                <div id="profile"></div>
+            </div>
+        </div>
+
+        <script>
+            const homeComponents = [
+                {
+                    name: "header",
+                    elementId: "header"
+                },
+                {
+                    name: "about",
+                    elementId: "about"
+                },
+                {
+                    name: "profile",
+                    elementId: "profile"
+                },
+            ];
+            fetchComponents(homeComponents);
+        </script>
+    </body>
+</html>
